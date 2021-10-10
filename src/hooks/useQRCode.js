@@ -25,6 +25,9 @@ const useQRCode = () => {
       setScanResultFile(result);
     }
   };
+  const onScanFile = () => {
+    qrRef.current.openImageDialog();
+  };
 
   const handleErrorWebCam = (error) => {
     console.log(error);
@@ -35,7 +38,14 @@ const useQRCode = () => {
     }
   };
 
+  const handleSubmit = (e) => {
+    generateQrCode();
+    setText(""); //To reset the textfield value
+    e.preventDefault();
+  };
+
   return {
+    text,
     setText,
     generateQrCode,
     imageUrl,
@@ -46,6 +56,8 @@ const useQRCode = () => {
     scanResultWebCam,
     handleScanWebCam,
     handleErrorWebCam,
+    onScanFile,
+    handleSubmit,
   };
 };
 

@@ -56,7 +56,7 @@ body {
 .tabset > label:hover::after,
 .tabset > input:focus + label::after,
 .tabset > input:checked + label::after {
-  background: #550487;
+  background: #f50057;
 }
 
 .tabset > input:checked + label {

@@ -21,7 +21,9 @@ function App() {
           <img src={Logo} alt="logo" width="50" />
           <strong className={classes.title}>QR Code tools</strong>
         </div>
-        <sub className={classes.sub}>Generate & download or Scan & decode</sub>
+        <sub className={classes.sub}>
+          Generate - download - Scan - import - decode
+        </sub>
       </div>
       <Container className={classes.conatiner}>
         <Tabs />
@@ -64,6 +66,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
+  },
+  sub: {
+    marginTop: 4,
   },
 }));
 export default App;

@@ -10,7 +10,8 @@ import useQRCode from "../hooks/useQRCode";
 
 const GenerateQRCode = () => {
   const classes = useStyles();
-  const { setText, generateQrCode, imageUrl } = useQRCode();
+  const { setText, handleSubmit, imageUrl, text } = useQRCode();
+
   return (
     <Card>
       <h2 className={classes.title}>Generate & Download</h2>
@@ -22,20 +23,33 @@ const GenerateQRCode = () => {
               onChange={(e) => setText(e.target.value)}
             />
             <Button
+              disabled={text ? false : true}
+              style={!text ? { filter: "opacity(0.5)" } : null}
               className={classes.btn}
               variant="contained"
-              onClick={() => generateQrCode()}
+              onClick={handleSubmit}
             >
-              Generate
+              {!text ? `Disabled` : `Generate`}
             </Button>
             <div className="term-content"></div>
             <br />
             <br />
             <br />
             {imageUrl ? (
-              <a href={imageUrl} download="qrcode.png">
-                <img src={imageUrl} alt="img" />
-              </a>
+              <div className={classes.qrContent}>
+                <a
+                  title="Click to Downoald QR code"
+                  data-toggle="tooltip"
+                  data-placement="left"
+                  href={imageUrl}
+                  download="qrcode.png"
+                >
+                  <img src={imageUrl} alt="img" />
+                </a>
+                <sub className={classes.subQRcode}>
+                  Click on QRCode for download it
+                </sub>
+              </div>
             ) : null}
           </Grid>
         </Grid>
@@ -58,6 +72,17 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 20,
     backgroundColor: "#550487 !important",
     color: "#fff",
+  },
+  qrContent: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "column",
+  },
+  subQRcode: {
+    marginTop: 10,
+    color: "darkred",
+    fontWeight: 400,
   },
 }));
 
