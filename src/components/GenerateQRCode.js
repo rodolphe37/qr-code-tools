@@ -10,8 +10,13 @@ import useQRCode from "../hooks/useQRCode";
 
 const GenerateQRCode = () => {
   const classes = useStyles();
-  const { setText, handleSubmit, imageUrl, text } = useQRCode();
+  const { setText, generateQrCode, imageUrl, text } = useQRCode();
 
+  const handleSubmit = (e) => {
+    generateQrCode();
+    setText(""); //To reset the textfield value
+    e.preventDefault();
+  };
   return (
     <Card>
       <h2 className={classes.title}>Generate & Download</h2>

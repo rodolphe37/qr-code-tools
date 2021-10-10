@@ -38,12 +38,6 @@ const useQRCode = () => {
     }
   };
 
-  const handleSubmit = (e) => {
-    generateQrCode();
-    setText(""); //To reset the textfield value
-    e.preventDefault();
-  };
-
   return {
     text,
     setText,
@@ -57,7 +51,6 @@ const useQRCode = () => {
     handleScanWebCam,
     handleErrorWebCam,
     onScanFile,
-    handleSubmit,
   };
 };
 
