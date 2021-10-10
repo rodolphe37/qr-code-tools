@@ -21,16 +21,17 @@ the code is ***open sources***!
 
 ### :bookmark: What is QRCode Tools?
 
-<img  style =" margin-top: 5px; margin-right: 22px " src="demo/demo.gif" alt="drawing" height="675" width="325"/>
-
 >QRCode Tools is a complete and fast tool to:
 >- Generate your QrCode and then download it!
 >- Scan a QrCode directly with your camera then read it "on the fly".
 >- Import a QrCode from your hard drive and read it "on the fly".
 
+<img  style =" margin-top: 5px; margin-right: 22px " src="demo/demo.gif" alt="drawing" height="675" width="325"/>
+
+
 ---
 
-**:heavy_exclamation_mark: Progressive Web App!**
+**:heavy_exclamation_mark: Progressive Web App :heavy_exclamation_mark:**
  This application is cross-platform, it can be installed on all mobiles and desktops.
 
 ---
