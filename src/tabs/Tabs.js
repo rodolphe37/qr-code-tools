@@ -116,6 +116,9 @@ const useStyles = makeStyles((theme) => ({
     color: "darkred",
     fontWeight: 400,
   },
+  copyright: {
+    textAlign: "center",
+  },
 }));
 
 export default Tabs;
