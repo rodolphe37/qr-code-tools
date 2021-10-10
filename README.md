@@ -37,11 +37,8 @@ the code is open sources!
 
 ## UI pictures:
 
-<img  style =" margin-top: 5px; margin-right: 22px " src="demo/generate2.png" alt="drawing" height="675" width="325"/>
+![alt text](demo/ui-demo.png "QRCode Tools")
 
-<img  style =" margin-top: 5px; margin-right: 22px " src="demo/scan.png" alt="drawing" height="675" width="325"/>
-
-<img  style =" margin-top: 5px; margin-right: 22px " src="demo/import2.png" alt="drawing" height="675" width="325"/>
 
 ---
 
