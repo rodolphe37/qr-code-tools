@@ -43,20 +43,24 @@ const Tabs = () => {
 
         <input
           onClick={handleClickScan}
+          readOnly
+          checked={webcanTab ? true : false}
           type="radio"
           name="tabset"
           id="tab2"
           aria-controls="scan"
         />
-        <label for="tab2">Webcam</label>
+        <label htmlFor="tab2">Webcam</label>
         <input
           onClick={handleClickImport}
+          readOnly
+          checked={pictureTab ? true : false}
           type="radio"
           name="tabset"
           id="tab3"
           aria-controls="fromPicture"
         />
-        <label for="tab3">Picture</label>
+        <label htmlFor="tab3">Picture</label>
 
         <div className="tab-panels">
           <section id="generate" className="tab-panel">
