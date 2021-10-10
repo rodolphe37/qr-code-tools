@@ -7,8 +7,8 @@
 
 # QRCode Tools
 
->This app is free to use &
-the code is open sources!
+>This app is ***free to use*** &
+the code is ***open sources***!
 
 ---
 
