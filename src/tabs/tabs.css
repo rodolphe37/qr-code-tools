@@ -42,10 +42,14 @@ body {
   content: "";
   position: absolute;
   left: 15px;
-  bottom: 10px;
+  bottom: 16px;
   width: 22px;
   height: 4px;
   background: #8d8d8d;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 65%;
 }
 
 .tabset > label:hover,
