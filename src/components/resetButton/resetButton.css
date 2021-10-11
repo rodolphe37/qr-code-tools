@@ -1,0 +1,19 @@
+.input-reset {
+  display: flex;
+  cursor: pointer;
+  text-align: center;
+  appearance: none;
+  background: transparent;
+  width: 3em;
+  margin-right: -20px;
+  border: none;
+}
+.input-reset .icon {
+  width: 25px;
+  height: 25px;
+}
+.resetButton-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

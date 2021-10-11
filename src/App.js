@@ -5,6 +5,7 @@ import PwaLogo from "./assets/pwa-pass-3.svg";
 import "./App.css";
 import ReactGA from "react-ga";
 import Tabs from "./tabs/Tabs";
+import FloatingButton from "./components/githubFloatingButton/FloatingButton";
 
 const TRACKING_ID = `${process.env.REACT_APP_TRACKING_GA}`;
 ReactGA.initialize(TRACKING_ID);
@@ -32,6 +33,7 @@ function App() {
       <Container className={classes.conatiner}>
         <Tabs />
       </Container>
+      <FloatingButton />
     </div>
   );
 }

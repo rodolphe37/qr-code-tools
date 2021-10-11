@@ -2,15 +2,17 @@ import { Card, CardContent, makeStyles, Grid } from "@material-ui/core";
 import { Fragment } from "react";
 import QrReader from "react-qr-reader";
 import useQRCode from "../hooks/useQRCode";
+import ResetButton from "./resetButton/ResetButton";
 
 const ScanQRCode = () => {
   const classes = useStyles();
   const { scanResultWebCam, handleScanWebCam, handleErrorWebCam } = useQRCode();
 
   return (
-    <Card>
+    <Card style={{ padding: 5 }}>
       <h2 className={classes.title}>Scan & Decode</h2>
       <CardContent>
+        {scanResultWebCam ? <ResetButton /> : null}
         <Grid container spacing={2}>
           <Grid item xl={4} lg={4} md={6} sm={12} xs={12}>
             {scanResultWebCam ? (
@@ -41,6 +43,7 @@ const useStyles = makeStyles((theme) => ({
     background: "#a5a4a5",
     color: "#fff",
     padding: 20,
+    boxShadow: "0 0px 4px #3f3838",
   },
   textResult: {
     fontSize: 16,

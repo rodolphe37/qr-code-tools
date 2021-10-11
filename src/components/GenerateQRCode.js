@@ -7,6 +7,7 @@ import {
   Button,
 } from "@material-ui/core";
 import useQRCode from "../hooks/useQRCode";
+import ResetButton from "./resetButton/ResetButton";
 
 const GenerateQRCode = () => {
   const classes = useStyles();
@@ -18,9 +19,10 @@ const GenerateQRCode = () => {
     e.preventDefault();
   };
   return (
-    <Card>
+    <Card style={{ padding: 5 }}>
       <h2 className={classes.title}>Generate & Download</h2>
       <CardContent>
+        {imageUrl ? <ResetButton /> : null}
         <Grid container spacing={2}>
           <Grid item xl={4} lg={4} md={6} sm={12} xs={12}>
             <TextField
@@ -71,6 +73,7 @@ const useStyles = makeStyles((theme) => ({
     background: "#a5a4a5",
     color: "#fff",
     padding: 20,
+    boxShadow: "0 0px 4px #3f3838",
   },
   btn: {
     marginTop: 10,
