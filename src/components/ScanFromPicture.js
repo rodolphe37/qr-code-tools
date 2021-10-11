@@ -10,7 +10,7 @@ const ScanFromPicture = () => {
 
   return (
     <Card style={{ padding: 5 }}>
-      <h2 className={classes.title}>Import & decode</h2>
+      <h2 className={classes.title}>Import & Decode</h2>
       <Grid item xl={4} lg={4} md={6} sm={12} xs={12}>
         {scanResultFile ? (
           <Fragment>

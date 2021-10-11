@@ -9,7 +9,7 @@ const ScanQRCode = () => {
 
   return (
     <Card>
-      <h2 className={classes.title}>Scan & decode</h2>
+      <h2 className={classes.title}>Scan & Decode</h2>
       <CardContent>
         <Grid container spacing={2}>
           <Grid item xl={4} lg={4} md={6} sm={12} xs={12}>
