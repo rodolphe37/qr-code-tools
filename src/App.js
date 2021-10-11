@@ -3,8 +3,12 @@ import { Container, makeStyles } from "@material-ui/core";
 import Logo from "./assets/qr-code.svg";
 import PwaLogo from "./assets/pwa-pass-3.svg";
 import "./App.css";
-
+import ReactGA from "react-ga";
 import Tabs from "./tabs/Tabs";
+
+const TRACKING_ID = `${process.env.REACT_APP_TRACKING_GA}`;
+ReactGA.initialize(TRACKING_ID);
+ReactGA.pageview(window.location.pathname);
 
 function App() {
   const classes = useStyles();
