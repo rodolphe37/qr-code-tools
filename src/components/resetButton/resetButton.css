@@ -18,4 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: absolute;
+  top: 7em;
+  right: 17px;
 }

@@ -9,7 +9,7 @@ const ScanQRCode = () => {
   const { scanResultWebCam, handleScanWebCam, handleErrorWebCam } = useQRCode();
 
   return (
-    <Card style={{ padding: 5 }}>
+    <Card style={{ padding: 5, position: "relative" }}>
       <h2 className={classes.title}>Scan & Decode</h2>
       <CardContent>
         {scanResultWebCam ? <ResetButton /> : null}

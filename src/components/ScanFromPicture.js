@@ -10,7 +10,7 @@ const ScanFromPicture = () => {
     useQRCode();
 
   return (
-    <Card style={{ padding: 5 }}>
+    <Card style={{ padding: 5, position: "relative" }}>
       <h2 className={classes.title}>Import & Decode</h2>
       <CardContent>
         {scanResultFile ? <ResetButton /> : null}

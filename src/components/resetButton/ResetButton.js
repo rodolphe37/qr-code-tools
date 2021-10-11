@@ -2,11 +2,13 @@ import "./resetButton.css";
 
 const ResetButton = () => {
   return (
-    <div className="resetButton-container">
+    <div
+      title="Click to Reset the application"
+      data-toggle="tooltip"
+      data-placement="left"
+      className="resetButton-container"
+    >
       <button
-        title="Click to Reset the application"
-        data-toggle="tooltip"
-        data-placement="left"
         onClick={() => window.location.replace("/")}
         type="reset"
         className="input-reset"

@@ -19,7 +19,7 @@ const GenerateQRCode = () => {
     e.preventDefault();
   };
   return (
-    <Card style={{ padding: 5 }}>
+    <Card style={{ padding: 5, position: "relative" }}>
       <h2 className={classes.title}>Generate & Download</h2>
       <CardContent>
         {imageUrl ? <ResetButton /> : null}
