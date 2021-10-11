@@ -23,10 +23,10 @@ function App() {
       <div className={classes.headerApp}>
         <div className={classes.titleContainer}>
           <img src={Logo} alt="logo" width="50" />
-          <strong className={classes.title}>QR Code tools</strong>
+          <strong className={classes.title}>QR Code Tools</strong>
         </div>
         <sub className={classes.sub}>
-          Generate - download - Scan - import - decode
+          Generate - Download - Scan - Import - Decode
         </sub>
       </div>
       <Container className={classes.conatiner}>
