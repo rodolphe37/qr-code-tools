@@ -83,6 +83,9 @@ MIT
 
 ## My other projects:
 
+### My Simple Tutorial Creator
+>https://github.com/rodolphe37/my-simple-tutorial-creator
+
 >### My Simple Task Manager
 >https://github.com/rodolphe37/my-simple-tasks-manager-
 
@@ -130,7 +133,6 @@ MIT
 
 >### Administration template - React JS & react-admin
 >https://github.com/rodolphe37/nfc-updates-front
-
 
 >### Administration template Backend - Node & Express
 >https://github.com/rodolphe37/nfc-updates-back
