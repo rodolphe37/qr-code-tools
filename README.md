@@ -83,7 +83,7 @@ MIT
 
 ## My other projects:
 
-### My Simple Tutorial Creator
+>### My Simple Tutorial Creator
 >https://github.com/rodolphe37/my-simple-tutorial-creator
 
 >### My Simple Task Manager
