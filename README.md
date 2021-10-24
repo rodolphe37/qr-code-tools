@@ -95,9 +95,6 @@ MIT
 >### App for decrypt greenPass europe QRcode
 >https://github.com/rodolphe37/qrcode-decoder
 
->### App for decrypt greenPass europe QRcode
->https://github.com/rodolphe37/qrcode-decoder
-
 >### Css animation with Create React App base.
 >https://github.com/rodolphe37/halloween2021-bat-tuto-youtube-video
 
