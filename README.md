@@ -81,6 +81,8 @@ Thank you! :heart:
 
 MIT
 
+---
+
 ## My other projects:
 
 >### My Simple Tutorial Creator
