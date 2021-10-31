@@ -18,7 +18,17 @@ const ScanQRCode = () => {
             {scanResultWebCam ? (
               <Fragment>
                 <h3>Content: </h3>
-                <h4 className={classes.textResult}>{scanResultWebCam}</h4>
+                {scanResultWebCam.includes("https://") ? (
+                  <a
+                    className={classes.textResult}
+                    href={`${scanResultWebCam}`}
+                    target="new"
+                  >
+                    {scanResultWebCam}
+                  </a>
+                ) : (
+                  <h4 className={classes.textResult}>{scanResultWebCam}</h4>
+                )}
               </Fragment>
             ) : null}
             <h3>Scan by Web Cam</h3>

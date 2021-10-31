@@ -18,7 +18,17 @@ const ScanFromPicture = () => {
           {scanResultFile ? (
             <Fragment>
               <h3>Scanned content: </h3>
-              <h4 className={classes.textResult}>{scanResultFile}</h4>
+              {scanResultFile.includes("https://") ? (
+                <a
+                  className={classes.textResult}
+                  href={`${scanResultFile}`}
+                  target="new"
+                >
+                  {scanResultFile}
+                </a>
+              ) : (
+                <h4 className={classes.textResult}>{scanResultFile}</h4>
+              )}
             </Fragment>
           ) : null}
           <Button
