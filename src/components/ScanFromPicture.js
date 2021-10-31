@@ -31,14 +31,16 @@ const ScanFromPicture = () => {
               )}
             </Fragment>
           ) : null}
-          <Button
-            className={classes.btn}
-            variant="contained"
-            color="secondary"
-            onClick={onScanFile}
-          >
-            Import Qr Code
-          </Button>
+          {!scanResultFile ? (
+            <Button
+              className={classes.btn}
+              variant="contained"
+              color="secondary"
+              onClick={onScanFile}
+            >
+              Import Qr Code
+            </Button>
+          ) : null}
           <QrReader
             ref={qrRef}
             delay={300}
